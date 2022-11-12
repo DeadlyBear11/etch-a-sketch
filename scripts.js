@@ -25,11 +25,11 @@ function addEventToChildren(element) {
 // Add event-listener with changeColor to each children of container.
 addEventToChildren(container);
 
-// Function to change the number of blocks inside container.
 // Ask the user to input the number of blocks per side desired (max. 100).
 const btn = document.querySelector("#button");
 btn.addEventListener("click", changeBlocksNum);
 
+// Function to change the number of blocks inside container.
 function changeBlocksNum() {
     let nBlocks = 0;
 
@@ -52,5 +52,18 @@ function changeBlocksNum() {
         block.classList.add("block-new");
         block.addEventListener("mouseover", () => block.classList.add("hover-color"));
         container.appendChild(block);
+    }
+}
+
+// Erase the drawing.
+const btnErase = document.querySelector("#button2");
+btnErase.addEventListener("click", eraseDrawing);
+
+// Function to erase the drawing.
+function eraseDrawing() {
+    let children = container.childNodes;
+    for (l = 0; l < children.length; l++) {
+        block = children[l];
+        block.classList.remove("hover-color");
     }
 }
