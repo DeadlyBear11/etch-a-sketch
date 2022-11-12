@@ -7,6 +7,49 @@ body {
     background-color: rgb(37, 37, 37);
 }
 
+#container-title, #container-buttons {
+    min-height: 3rem;
+    text-align: center;
+}
+
+#container-title {
+    background-color: rgb(39, 16, 38);
+}
+
+#title {
+    font-family: Impact, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: orangered;
+}
+
+#author {
+    position: absolute;
+    top: 1.3rem;
+    left: 51.5rem;
+    color: azure;
+    font-family: Garamond, serif;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.buttons {
+    font-family: Tahoma, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 5px;
+    background-color: azure;
+    color: rgb(39, 16, 38);
+}
+
+.buttons:hover {
+    background-color: purple;
+    color: azure;
+}
+
 #container {
     margin: 0 auto;
     display: flex;
