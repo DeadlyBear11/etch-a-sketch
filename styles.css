@@ -11,23 +11,23 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    width: 32rem;
-    height: 32rem;
+    width: 512px;
+    height: 512px;
     border: 3px solid orangered;
     justify-content: center;
     align-items: center;
 }
 
 .block {
-    width: 2rem;
-    height: 2rem;
+    width: 32px;
+    height: 32px;
+}
+
+.block, .block-new {
     background-color: purple;
 }
 
-.block:hover {
+.block:hover, .block-new:hover, .hover-color {
     background-color: azure;
 }
 
-.hover-color {
-    background-color: azure;
-}
